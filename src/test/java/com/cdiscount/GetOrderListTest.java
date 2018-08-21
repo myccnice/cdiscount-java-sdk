@@ -40,7 +40,7 @@ public class GetOrderListTest extends BaseTest {
         localization.setLanguage(Language.EN);
         try {
             GetOrderListResponseDocument responseDocument = stub.getOrderList(client);
-            Order[] brands=responseDocument.getGetOrderListResponse().getGetOrderListResult().getOrderList().getOrderArray();
+            Order[] brands = responseDocument.getGetOrderListResponse().getGetOrderListResult().getOrderList().getOrderArray();
             for (Order brand:brands) {
                 System.out.println(brand.getOrderNumber());
             }
