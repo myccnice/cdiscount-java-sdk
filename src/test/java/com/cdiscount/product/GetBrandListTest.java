@@ -1,4 +1,4 @@
-package com.cdiscount;
+package com.cdiscount.product;
 import java.rmi.RemoteException;
 
 import org.datacontract.schemas._2004._07.cdiscount_framework_core_communication_messages.ContextMessage;
@@ -7,11 +7,19 @@ import org.datacontract.schemas._2004._07.cdiscount_framework_core_communication
 import org.datacontract.schemas._2004._07.cdiscount_framework_core_communication_messages.LocalizationMessage;
 import org.datacontract.schemas._2004._07.cdiscount_framework_core_communication_messages.SecurityContext;
 
+import com.cdiscount.BaseTest;
 import com.cdiscount.www.Brand;
 import com.cdiscount.www.GetBrandListDocument;
 import com.cdiscount.www.GetBrandListDocument.GetBrandList;
 import com.cdiscount.www.GetBrandListResponseDocument;
 
+/**
+ * GetBrandList
+ *
+ * create in 2018年8月22日
+ * @author wangpeng
+ * @see https://dev.cdiscount.com/marketplace/?page_id=236
+ */
 public class GetBrandListTest extends BaseTest {
 
     public static void main(String[] args) {
